@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Happy Birthday Charity!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffebf5;
+            color: #d084b6;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #d084b6;
+            color: white;
+            padding: 20px;
+        }
+
+        .countdown {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ff4d99;
+            margin-top: 50px;
+        }
+
+        .section {
+            margin: 30px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #d084b6;
+        }
+
+        .memories, .wishes {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .special-song {
+            margin-top: 30px;
+        }
+
+        .song {
+            font-size: 1.5rem;
+            color: #ff4d99;
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #d084b6;
+            color: white;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #ff4d99;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #d084b6;
+        }
+
+        .image-gallery img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Happy Happy Birthday, Charity!</h1>
+    <p>4 beautiful years of love and special memories together.</p>
+</header>
+
+<div class="countdown" id="countdown"></div>
+
+<div class="section">
+    <h2 ;>Dear Charity, </h2>
+    <div class="memories">
+        <p>Every day with you is a special moment, but there are some memories that will always make my heart smile. From our first date, when I couldn't take my eyes off you, to the quiet evenings where we simply enjoyed each other's company, each moment with you is priceless. You've filled my life with joy, laughter, and love, Charity, and for that, I will always be grateful.</p>
+        <p>Remember the very first day I took you to Kibra,That was one of the most romantic moments of my life, and it was perfect because I was with you. Every time we are together, it feels like time stops just for us.</p>
+        <p>We've laughed until our stomachs hurt, shared secrets under the stars, and built a beautiful relationship based on love, trust, and care. I cherish every single moment we've spent together either as a couple as a friend and forever as my wife , and I am beyond excited for the many more memories we will create.</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2></h2>
+    <div class="wishes">
+        <p>My love, my best friend,my soulmate,my life and my everything </p>
+        <p>Happy happy  birthday! On this special day, I want to remind you how amazing you are and how much you mean to me. Your love has made my life more beautiful than I ever imagined. You are my forever, Charity. I promise to continue cherishing and loving you for as long as we both shall live.</p>
+        <p>May your day be as incredible and pure as your heart is. I love you with all that I am.</p>
+        <p>I miss you so so much. Miss our cuddles, spending some quality time together and making love to you.How I wish you were here with me. </p>
+    </div>
+</div>
+
+<div class="section">
+    <h2></h2>
+    <p class="special-song">This song reminds me of you every time I hear it. I hope you enjoy it, my love.</p>
+    <a class="button" href="https://youtu.be/XCPbfxEeyQE?si=jCcwkL32mgFoUdLw" target="_blank">Click to listen</a><br><br><br><br>
+    <a class="button" href="https://youtu.be/vYYDBbEamnU?si=ztsd3Tq7yd58e5Ab" target="_blank">Special Dedication-click to listen</a>
+</div>
+
+<div class="section">
+    <h2></h2>
+    <div class="image-gallery">
+        <!-- Add your image files here -->
+    </div>
+</div>
+
+<footer>
+    <p>Celebrating 4 years of love! Here's to many more beautiful moments ahead.I love you. </p>
+</footer>
+
+<script>
+// Countdown for Charity's birthday
+const countDownDate = new Date("Dec 14, 2024 00:00:00").getTime();
+
+const countdownFunction = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = countDownDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+        clearInterval(countdownFunction);
+        document.getElementById("countdown").innerHTML = "Happy Birthday, Charity!";
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
